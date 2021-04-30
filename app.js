@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/.well-known/acme-challenge/Vlgqr8t9gEVLDsbcDqqx_WU4rDPkGDa9N5uHtZqbCpc', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/.well-known/acme-challenge/Vlgqr8t9gEVLDsbcDqqx_WU4rDPkGDa9N5uHtZqbCpc'));
+    res.send('Vlgqr8t9gEVLDsbcDqqx_WU4rDPkGDa9N5uHtZqbCpc.BKF7QgX9fGl-oietu5Qe9DNyzIeY9yPO_uVjndylsIY');
 });
 
 app.get('*', function (req, res, next) {
