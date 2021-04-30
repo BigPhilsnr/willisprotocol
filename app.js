@@ -30,6 +30,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
+app.get('/.well-known/acme-challenge/Vlgqr8t9gEVLDsbcDqqx_WU4rDPkGDa9N5uHtZqbCpc', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/.well-known/acme-challenge/Vlgqr8t9gEVLDsbcDqqx_WU4rDPkGDa9N5uHtZqbCpc'));
+});
+
 app.get('*', function (req, res, next) {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
