@@ -1,0 +1,152 @@
+/* 
+ * jQuery yacal's Demo CSS
+ * 
+ * Author: Eduardo Ludi (@eduludi)
+ * More info: http://eduludi.github.io/jquery-yacal/
+*/
+.wrap {
+	position: relative;
+	display: inline-block;
+}
+
+/* Same as Bootstrap's .clearfix */
+.clearfix {
+	display: table;
+	content: " ";
+	clear: both;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.yclNav {
+}
+.prev,
+.next {
+	z-index: 100;
+	position: absolute;
+	display: block;
+	top: 15px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.prev:hover:before,
+.next:hover:before {
+	color: #fff;
+}
+.prev::before,
+.next::after {
+	position: absolute;
+	top: 7px;
+	font-size: 26px;
+	color: #636363;
+	font-weight: 600;
+	font-family: 'ionicons';
+}
+.prev span,
+.next span {
+	display: none;
+}
+.prev {
+	left: 10px;
+}
+.prev::before {
+	content: "\f3d5";
+	left: 9px;
+}
+.next {
+	right: 10px;
+}
+.next:after {
+	content: "\f3d6";
+	right: 9px;
+	position: absolute;
+	font-family: 'ionicons';
+
+}
+
+.month {
+	z-index: 5;
+	position: relative;
+	float: left;
+	margin: 10px 5px;
+	border-radius: 2%;
+	min-height: 266px; /*this avoids jumping*/
+}
+.month h4 {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.week {
+	position: relative;
+	height: 38px;
+	width: 350px;
+	margin: 0 4px;
+	border: 0 solid transparent;
+	border-width: 1px 0;
+}
+
+.day,
+.wday {
+	display: block;
+	width: 36px;
+	height: 27px;
+	line-height: 28px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fefefe;
+	font-weight: 400;
+	font-size: 18px;
+}
+.day.today {
+	background-color: #bbb;
+	color: white !important;
+}
+.day.selected {
+	border-color: #777;
+}
+.day.active {
+	color: #333;
+	cursor: pointer;
+}
+.day.active:hover {
+	border-color: #ddd;
+}
+
+.day.d0,
+.wday.wd0 {
+	left: 0;
+}
+.day.d1,
+.wday.wd1 {
+	left: 50px;
+}
+.day.d2,
+.wday.wd2 {
+	left: 100px;
+}
+.day.d3,
+.wday.wd3 {
+	left: 155px;
+}
+.day.d4,
+.wday.wd4 {
+	left: 210px;
+}
+.day.d5,
+.wday.wd5 {
+	left: 265px;
+}
+.day.d6,
+.wday.wd6 {
+	left: 310px;
+}

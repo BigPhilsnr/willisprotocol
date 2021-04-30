@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
+
+<head>
+	<!-- Basic Page Needs -->
+	<meta charset="UTF-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="CreativeLayers">
+	<title>Willis Protocol and Concierge Services Ltd | Meet and Assist Services at JKIA Nairobi Kenya </title>
+	<meta name="robots" content="INDEX, FOLLOW">
+    <meta name="keywords" content="Concierge,Concierge Services,JKIA,jkia, meet and greet, JKIA airport, visa processing,airport arrival, airport depature,airport ​Transportation, airport Porter Services ,airport Visa assistance">
+	<!-- Boostrap style -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphicons.css">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<!-- REVOLUTION LAYERS STYLES -->
+	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+	<!-- Theme style -->
+
+	<link rel="stylesheet" href="css/x.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+		integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+		crossorigin="anonymous" />
+
+	<!-- Responsive style -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/waves.min.js"></script>
+	<!--   -->
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+
+	<!-- Revolution Slider -->
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="revolution/js/slider.js"></script>
+
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+		integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+		crossorigin="anonymous"></script>
+	<script>
+		var app = angular.module("myApp", ["ngRoute", "ngAnimate"]);
+		app.config(function ($routeProvider, $locationProvider) {
+			$routeProvider
+				.when("/", {
+					templateUrl: "home.html"
+				})
+				.when("/about", {
+					templateUrl: "about.html"
+				})
+				.when("/arrival", {
+					templateUrl: "arrival.html"
+				})
+				.when("/departure", {
+					templateUrl: "departure.html"
+				})
+				.when("/meet", {
+					templateUrl: "meet.html"
+				})
+				.when("/gallery", {
+					templateUrl: "gallery.html"
+				})
+				.when("/transportation", {
+					templateUrl: "transportation.html"
+				})
+				.when("/transfer", {
+					templateUrl: "transfers.html"
+				}).when("/con", {
+					templateUrl: "con.html"
+				})
+				.when("/contact", {
+					templateUrl: "contact.html"
+				}).
+			otherwise({
+				redirectTo: '/'
+			});
+
+		});
+
+
+		app.controller('myCtrl', function ($scope, $location, $window, $location, $anchorScroll, $timeout) {
+			const isSmallDevice = $window.innerWidth < 960;
+			$scope.smallDevice = isSmallDevice;
+			$scope.navStatus = !isSmallDevice
+			$scope.bookInfo = {};
+			$scope.contactInfo = {};
+			$scope.menuStyle = "";
+			$scope.loading = {
+				"display": "block"
+			}
+
+			$timeout(function () {
+				$scope.loading = {
+					"display": "none"
+				}
+
+			}, 1500);
+
+			$scope.openNav = () => {
+				$scope.navStatus = true
+			}
+
+			$scope.$watch('navStatus', function (newval, oldval) {
+
+				//alert(`${oldval} ===> ${newval}`)
+				if (!newval) {
+					$scope.menuStyle = "";
+				} else {
+					$scope.menuStyle = "active";
+				}
+
+			});
+
+			$scope.closeNav = () => {
+				if (isSmallDevice) {
+					$scope.navStatus = false
+				}
+
+				$scope.scrollToTop();
+
+			}
+
+			$scope.scrollToTop = function ($var) {
+				// 'html, body' denotes the html element, to go to any other custom element, use '#elementID'
+				$('html, body').animate({
+					scrollTop: 0
+				}, 'fast'); // 'fast' is for fast animation
+			};
+
+			$scope.getLogoStyle = function () {
+				if (isSmallDevice) {
+					return 'logo-small'
+				}
+				return 'logo-large';
+			}
+
+			$scope.getClass = function (path) {
+				if (isSmallDevice) {
+					return '';
+				}
+				const allLocations = $location.path().split("/");
+
+				letter = allLocations[allLocations.length - 1];
+				const css = (letter === path) ? 'menu-active' : '';
+				if (path === 'home' && !letter) {
+					return "menu-active"
+				}
+
+				return css;
+			}
+
+			$scope.scroll = function ($event) {
+				$event.preventDefault()
+				$location.hash('bookingForm');
+				$anchorScroll();
+			};
+
+			$scope.submitBookingFrom = function () {
+				$scope.bookInfo = {}
+			}
+			$scope.submitContactForm = function () {
+				$scope.contactInfo = {};
+			}
+			$scope.submitNewsLetter = function () {
+				$scope.email = "";
+			}
+			$scope.submitForm = function (form) {
+				if (form.$valid) {
+					$scope.submitBookingFrom()
+					alert("Information saved Successfully");
+				}
+			};
+
+			$scope.submitContactForm = function (form) {
+				if (form.$valid) {
+					$scope.submitContactFrom()
+					alert("Sent Successfully");
+					toastr.success('Form has been submitted', 'Success')
+				}
+			};
+
+			$scope.submit = function ($event) {
+				$event.preventDefault();
+			}
+
+		});
+	</script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+
+	<script type="text/javascript" src="js/template.js"></script>
+	<link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+	<div class="layout-theme">
+		<div id="loading-overlay" ng-style="loading">
+			<div class="loader"></div>
+		</div>
+		<!-- Start Header -->
+		<header id="header" class="header-04">
+			<!-- <div class="top-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 left-content">
+							<ul>
+								<li><img src="images/icon/call.png" alt="">+254 (0) 736 111 111 / 715 111 111</li>
+								<span style="margin: 16px;">|</span>
+								<li><img src="images/icon/maind.png" alt="">Info@willisprotocol.com</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div> -->
+
+			<div class="bottom-header">
+				<div class="container">
+					<div id="logo" class="logo-pro">
+						<a href="#!" title="logo prodrive">
+							<img src="images/logo.png" style="height: 77px;" alt="">
+						</a>
+					</div>
+					<div class="navigation">
+						<div class="mobile-menu" ng-click="openNav()">
+							<i class="fa fa-bars" style="font-size: 41px;margin-left: 100%; "></i>
+						</div>
+						<div id="main-menu" class="main-menu" ng-class="menuStyle" ng-hide="!navStatus">
+							<div class="top-text">
+								<i class="pe-7s-close" ng-click="closeNav()"></i>
+								<span style="width: 100%;">
+									<a href="#!" title=""><img src="images/logo.png"
+											style="height: 80px;margin-left: -34%;" alt=""></a>
+								</span>
+
+							</div>
+							<ul class="menu">
+								<li ng-click="closeNav()" ng-class="getClass('home')">
+									<a href="#!">Home</a>
+								</li>
+								<li ng-click="closeNav()" ng-class="getClass('about')">
+									<a class="xyz" href="#!about">About us</a>
+
+								</li>
+								<!-- <li ng-click="closeNav()" ng-class="getClass('meet')">
+									<a href="#!meet">Meet Assist</a>
+
+								</li> -->
+
+								<li ng-click="closeNav()" ng-class="getClass('transfer')">
+									<a href="#!transfer">Transit </a>
+
+								</li>
+
+								<li ng-click="closeNav()" ng-class="getClass('arrival')">
+									<a href="#!arrival">Arrival</a>
+
+								</li>
+								<li ng-click="closeNav()" ng-class="getClass('departure')">
+									<a href="#!departure">Departure</a>
+
+								</li>
+
+								<li ng-click="closeNav()" ng-class="getClass('transportation')">
+									<a href="#!transportation"> ​Chauffeured​ ​Transportation</a>
+								</li>
+
+								<li ng-click="closeNav()" ng-class="getClass('con')">
+									<a href="#!con"> Extra Concierge​ ​Services </a>
+								</li>
+
+								<!-- <li ng-click="closeNav()" ng-class="getClass('gallery')">
+									<a href="#!gallery">Gallery</a>
+
+								</li> -->
+
+								<!-- <li ng-click="closeNav()" ng-class="getClass('contact')">
+									<a href="#!contact">Contact</a>
+
+								</li> -->
+							</ul>
+						</div>
+					</div>
+					<div class="box-right">
+
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<section ng-view id="routedContent"></section>
+		<!-- Start Footer -->
+		<footer id="footer" class="footer-04">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-2 ft2">
+						<div class="widget-footer widget-about">
+							<div class="logo-ft">
+								<a href="#" title="">
+									<img src="images/logo.png" alt="">
+								</a>
+							</div>
+
+							<ul class="social-ft">
+								<li>
+									<a href="#" title="Facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Twitter">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Instagram">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Pinterest">
+										<i class="fa fa-pinterest" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Dribble">
+										<i class="fa fa-dribbble" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Google">
+										<i class="fa fa-google" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 ft1">
+						<div class="widget-footer widget-services">
+							<h3 class="title-ft">
+								Contact Info
+							</h3>
+							<ul class="infomation-ft">
+								<li>Willis Protocol and Concierge Services Ltd</li>
+								<li>
+									P.O. Box 103100 - 0010, Nairobi, Kenya
+								</li>
+								<li>Mobile: +254 721 516 086 </li>
+								<li>Info@willisprotocol.com</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="col-md-2 ft2">
+						<div class="widget-footer widget-services">
+							<h3 class="title-ft">
+								Our services
+							</h3>
+							<ul>
+								<li>
+									<a href="#!arrival" title="">Arrival</a>
+								</li>
+								<li>
+									<a href="#!departure" title="">Departure</a>
+								</li>
+								<li>
+									<a href="#!transfer" title="">Transfer</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 ft2">
+						<div class="widget-footer widget-services">
+							<h3 class="title-ft">
+								About us
+							</h3>
+							<ul>
+
+								<li>
+									<a href="#!about" title="">About us</a>
+								</li>
+
+								<li>
+									<a href="#!contact" title="">Contact</a>
+								</li>
+
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 ft1">
+						<div class="widget-footer newletter">
+							<h3 class="title-ft">
+								Newsletter
+							</h3>
+							<p class="content-newletter">Subscribe to our newsletter for news,
+								updates, exclusive discounts and offers.</p>
+							<form id="subscribe-form" action="#" method="post" accept-charset="utf-8"
+								data-mailchimp="true">
+								<div id="subscribe-content">
+									<div class="field-one-third">
+										<div class="field-name">
+											<input id="subscribe-email" type="text" name="email" placeholder="Email">
+										</div>
+									</div>
+									<div class="btn-submit">
+										<button id="subscribe-button" type="button" class="base box-shadow"><img
+												src="images/icon/arrow-gay.png" alt=""></button>
+									</div>
+								</div>
+								<div id="subscribe-msg">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		<section class="copyright" style="width: 100% !important;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright © 2020. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Copyright -->
+		<div class="scroll-top">
+		</div>
+	</div>
+	<!-- Javascript -->
+
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/waves.min.js"></script>
+<!--   -->
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+
+<script type="text/javascript" src="js/template.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="revolution/js/slider.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+</html>

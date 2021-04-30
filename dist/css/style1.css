@@ -1,0 +1,2297 @@
+
+
+
+
+
+
+
+
+iframe {
+    width: 100%;
+    height: 100%
+}
+
+.ul0 {
+    margin: 0;
+    padding: 0
+}
+
+.bg {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
+}
+
+.middle {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.middletop {
+    display: inline-block;
+    vertical-align: top
+}
+
+.middleflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.middleflexinline {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle
+}
+
+.image {
+    font-size: 0;
+    width: 100%;
+    height: auto
+}
+
+.imagebyheight {
+    font-size: 0;
+    width: auto;
+    height: 100%
+}
+
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+.font0 {
+    font-size: 0px
+}
+
+.font10 {
+    font-size: 10px
+}
+
+.font11 {
+    font-size: 11px
+}
+
+.font12 {
+    font-size: 12px
+}
+
+.font13 {
+    font-size: 13px
+}
+
+.font14 {
+    font-size: 14px
+}
+
+.font15 {
+    font-size: 15px
+}
+
+.font16 {
+    font-size: 16px
+}
+
+.font17 {
+    font-size: 17px
+}
+
+.font18 {
+    font-size: 18px
+}
+
+.font19 {
+    font-size: 19px
+}
+
+.font20 {
+    font-size: 20px
+}
+
+.fontgold {
+    color: #c29b5a
+}
+
+.desktopmenu {
+    background-color: #fff;
+    font-size: 0;
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding: .5% 6%;
+    border-bottom: 1px solid #fff;
+    transition: .3s border-bottom
+}
+
+body.single-airport .desktopmenu {
+    border-bottom: 1px solid rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, .9);
+    color: #fff
+}
+
+.desktopmenu.scrolling {
+    border-bottom: 1px solid #c19a58;
+    background-color: rgba(255, 255, 255, .95)
+}
+
+.pagecontainer {
+    min-height: 73vh;
+    margin-top: 6vw;
+    padding: 0 6%
+}
+
+
+
+body.single-airport .pagecontainer {
+    margin: 0;
+    padding: 0
+}
+
+.headeremail {
+    text-align: right;
+    margin-bottom: .8%
+}
+
+
+
+.logo {
+    width: 14%;
+    transition: .3s padding-right
+}
+
+.scrolling .logo {
+    padding-right: 4%
+}
+
+.headermenu {
+    text-align: right;
+    width: 86%
+}
+
+ul#menu-header-menu {
+    margin: 0;
+    padding: 0
+}
+
+.headermenu .menu-header-menu-container li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5vw;
+    margin: 0 .25vw;
+    transition: .3s color
+}
+
+.headermenu .menu-header-menu-container li:before {
+    content: "";
+    position: absolute;
+    background-color: #c29b5a;
+    z-index: 50;
+    height: 1px;
+    width: 100%;
+    left: -100%;
+    top: 98%;
+    transition: .4s cubic-bezier(.35, .04, 0, .61)
+}
+
+.headermenu .menu-header-menu-container li.current-menu-item {
+    color: #c29b5a
+}
+
+.headermenu .menu-header-menu-container li.current-menu-item:before,
+.headermenu .menu-header-menu-container li:hover:before {
+    left: 0
+}
+
+.headermenu .menu-item:hover {
+    color: #c29b5a
+}
+
+.headermenu .menu-header-menu-container li:last-child {
+    margin-right: 0
+}
+
+li#menu-item-1473 {
+    padding: 0;
+    border: unset;
+    overflow: visible
+}
+
+li#menu-item-1473:before {
+    display: none
+}
+
+li#menu-item-1473 a {
+    border: 1px solid #c29b5a;
+    border-radius: 0 0 24px;
+    
+    padding: .5vw 1.6vw;
+    overflow: hidden;
+    transition: .3s background
+}
+
+li#menu-item-1473 a:hover {
+    background: #c29b5a;
+    color: #fff !important
+}
+
+body.single-airport li#menu-item-1473,
+body.single-coverage_airport li#menu-item-1473 {
+    color: #c29b5a
+}
+
+body.single-airport li#menu-item-1473:hover,
+body.single-coverage_airport li#menu-item-1473:hover {
+    background: 0 0;
+    color: #fff
+}
+
+#sticky-social {
+    position: fixed;
+    z-index: 500;
+    right: 0;
+    top: 12vw;
+    color: #fff;
+    margin-right: 10px
+}
+
+.ulstyle {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.ulstyle li {
+    display: list-item;
+    text-align: -webkit-match-parent
+}
+
+.ulstyle li a {
+    background: #c29b5a;
+    display: block;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: .4rem
+}
+
+.slidersection {
+    background-color: #f7f7f7;
+    padding: 2% 5% 0;
+    margin: 0 0 10%;
+    position: relative
+}
+
+.slideimage {
+    width: 65%;
+    height: 27vw;
+    margin-bottom: -1.5vw
+}
+
+.slideinfo {
+    width: 34%;
+    padding-left: 4%
+}
+
+.main_slide_title {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5%
+}
+
+.slidetitle {
+    font-weight: 600;
+    width: 89%;
+    line-height: 1.2;
+    margin-bottom: 5%
+}
+
+.slidedesc {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #505050
+}
+
+.aboutsection {
+    position: relative;
+    padding: 4vw 0 2vw;
+    margin-bottom: 6vw
+}
+
+.aboutsectioncolor {
+    background-color: #f8f8f8;
+    position: absolute;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    z-index: -1;
+    top: 0
+}
+
+.aboutimage {
+    width: 54%;
+    height: 25vw;
+    position: relative
+}
+
+.aboutbgcolor {
+    background-color: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 2vw;
+    top: -2vw
+}
+
+.aboutimg {
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.aboutinfo {
+    width: 31%;
+    margin: 0 6% 0 8%
+}
+
+.aboutbutton {
+    border: 1px solid #525252;
+    display: inline-block;
+    padding: 7px 28px
+}
+
+.servicesection {
+    float: left;
+    width: 100%;
+    margin-bottom: 8%
+}
+
+.serviceimagecontainer {
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 21vw;
+    margin-right: 2%;
+    margin-bottom: 2%
+}
+
+.servicesection a:nth-child(2n+2) .serviceimagecontainer {
+    margin-right: 0
+}
+
+.servicecontent {
+    position: relative;
+    z-index: 50;
+    text-align: center;
+    padding: 0 18%;
+    top: 40%;
+    transition: .6s top
+}
+
+.service_image_active .servicecontent {
+    top: 15%
+}
+
+.serviceicon {
+    height: 2.5vw;
+    margin: auto auto 3%
+}
+
+.servicetitle {
+    font-weight: 600
+}
+
+.serviceanimation {
+    opacity: 0;
+    transition: .4s opacity
+}
+
+.service_image_active .serviceanimation {
+    opacity: 1
+}
+
+.servicedesc {
+    text-align: justify;
+    color: #fff;
+    margin: 6% 0 10%
+}
+
+.servicebutton {
+    border: 1px solid #c29b5a;
+    font-weight: 600;
+    padding: .5vw 3vw;
+    margin: auto;
+    display: inline-block;
+    background: 0 0
+}
+
+.service_overlay {
+    border: 1px solid goldenrod;
+    background: rgba(0, 0, 0, .63);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s background
+}
+
+.service_image_active .service_overlay {
+    background: rgba(0, 0, 0, .76)
+}
+
+.serviceborder {
+    position: absolute;
+    opacity: 0;
+    border: 1px solid #c29b5a;
+    top: 8%;
+    left: 4%;
+    width: 92%;
+    height: 84%;
+    border-radius: 0;
+    transition: .4s border-radius, .4s opacity
+}
+
+.service_image_active .serviceborder {
+    opacity: 1;
+    border-radius: 0 0 80px
+}
+
+.otherservicesection {
+    clear: both;
+    margin-bottom: 6vw
+}
+
+.otherservicesection.color2 {
+    background: #f7f7f7;
+    padding: 3% 0 0
+}
+
+
+
+
+.socialicon {
+    font-size: 0;
+    width: 1.6vw;
+    height: 1.6vw;
+    margin-right: 1.5vw
+}
+
+.social a:nth-child(4) .socialicon {
+    margin-right: 0
+}
+
+.sectionabout1 {
+    margin-bottom: 8%;
+    font-size: 0
+}
+
+.aboutimagecont {
+    position: relative;
+    width: 53%;
+    height: 25vw
+}
+
+.aboutimage1 {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 10%;
+    left: 5%
+}
+
+.sectionabout2 {
+    position: relative;
+    margin-bottom: 8%;
+    padding-top: 4%
+}
+
+.sectionabout2color {
+    background: #f7f7f7;
+    position: absolute;
+    width: 65%;
+    height: 92%;
+    z-index: -1;
+    margin-top: -3%
+}
+
+.aboutcontent {
+    z-index: -1;
+    border: 1px solid #c29b5a;
+    border-left: 0;
+    border-radius: 0 0 230px;
+    width: 48%;
+    padding: 3.5vw 5% 3.5vw 7%;
+    margin-left: -1%
+}
+
+.aboutimage2 {
+    width: 50%;
+    height: 24vw;
+    margin-left: 3%
+}
+
+.about2button {
+    position: relative;
+    display: inline-block;
+    background: #c29b5a;
+    color: #fff;
+    font-weight: 900;
+    padding: 9px 42px;
+    margin-top: 3%
+}
+
+.about2button span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.other_services_terms {
+    margin-top: 5%
+}
+
+.sectionabout3 {
+    position: relative;
+    margin-bottom: 16%
+}
+
+.sectionabout3color {
+    background: #f7f7f7;
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    z-index: -1;
+    right: 0;
+    top: 10%
+}
+
+.aboutimage3 {
+    width: 41%;
+    height: 24vw
+}
+
+.aboutcontent3 {
+    width: 52%;
+    padding: 5% 3% 0;
+    text-align: justify
+}
+
+.servicebox {
+    width: 19%;
+    text-align: center
+}
+
+.servicebox:last-child {
+    width: 24%
+}
+
+.serviceicon2 {
+    height: 2.5vw;
+    margin: 1vw auto
+}
+
+.serviceicon3 {
+    height: 1.8vw;
+    width: 11%;
+    vertical-align: top;
+    margin-top: 1%
+}
+
+.servicevipsection {
+    color: #505050;
+    position: relative;
+    margin-bottom: 8%;
+    font-size: 0
+}
+
+.servicevipsectiontext {
+    width: 80%;
+    padding: 4%;
+    background: #f6f6f6
+}
+
+.mainservice_bgcolor {
+    position: relative;
+    border: 1px solid #c29b5a;
+    padding: 8% 32% 8% 6%
+}
+
+.serviceinsidetext {
+    position: absolute;
+    display: inline-block;
+    background: #f6f6f6;
+    font-weight: 600;
+    padding: 0 2vw;
+    top: -2.5vw;
+    left: 20%;
+    line-height: 5vw
+}
+
+.servicevipsectiontext ul {
+    margin-bottom: 0
+}
+
+.servicevipsectiontext ul li {
+    margin-bottom: 1rem
+}
+
+.servicevipimage {
+    position: absolute;
+    width: 43%;
+    height: 80%;
+    top: 10%;
+    right: 0
+}
+
+.servicevipimage_2 {
+    position: absolute;
+    z-index: 10;
+    width: 45%;
+    height: 70%;
+    top: 15%;
+    left: 0
+}
+
+.serviceinsidetext_2 {
+    position: absolute;
+    display: inline-block;
+    background: #f6f6f6;
+    font-weight: 600;
+    padding: 0 2vw;
+    top: -2.5vw;
+    right: 20%;
+    line-height: 5vw
+}
+
+.mainservice_bgcolor_2 {
+    position: relative;
+    border: 1px solid #c29b5a;
+    padding: 8% 6% 8% 32%;
+    text-align: left
+}
+
+.bgcolor {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10
+}
+
+.limodesc {
+    width: 47%;
+    padding: 0 4%
+}
+
+.limoimage {
+    width: 38vw;
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.limoimage .bgcolor {
+    background-color: rgba(193, 154, 88, .4)
+}
+
+.ico {
+    z-index: 50
+}
+
+.termsection {
+    margin: 0 auto 8%;
+    background: #f7f7f7;
+    padding: 6% 16%
+}
+
+.otherserviceicon {
+    height: 3vw
+}
+
+.otherserviceinfo {
+    width: 85%;
+    margin-left: 4%
+}
+
+.slidercontainer {
+    width: 100%;
+    position: relative
+}
+
+.displayslide {
+    display: none;
+    opacity: 0
+}
+
+.displayslide[sid="1"] {
+    display: block;
+    opacity: 1
+}
+
+.slidearrow {
+    position: absolute;
+    cursor: pointer;
+    width: 1.5vw;
+    top: 50%;
+    padding: 0 .3vw
+}
+
+.slideleft {
+    left: -6vw
+}
+
+.slideright {
+    right: -6vw
+}
+
+@media only screen and (min-width:600px) {
+    .slideleft:after {
+        content: "Previous";
+        position: absolute;
+        left: 100%;
+        top: 1px
+    }
+
+    .slideright:after {
+        content: "Next";
+        position: absolute;
+        right: 100%;
+        top: 1px
+    }
+}
+
+.formsection {
+    clear: both;
+    position: relative;
+    background: #fff;
+    border: 1px solid #c09857;
+    width: 100%;
+    margin: 2vw auto 4vw;
+    padding: 5vw 8% 2vw
+}
+
+body.page-template-pagebooking .formsection {
+    margin: 10vw auto 4vw
+}
+
+.formtitle {
+    position: absolute;
+    background: #fff;
+    color: #7f7f7f;
+    text-align: center;
+    font-weight: 600;
+    width: 50%;
+    left: 25%;
+    top: -2vw;
+    padding: 0 3%
+}
+
+.msgtext {
+    color: #7f7f7f;
+    text-align: center;
+    font-weight: 600;
+    width: 90%;
+    left: 0
+}
+
+.formsection nf-field {
+    width: 48%;
+    margin-right: 4%;
+    display: inline-block;
+    vertical-align: top;
+    color: #474747
+}
+
+.nf-before-form-content {
+    display: none
+}
+
+.formsection nf-field:nth-child(2n+2) {
+    margin-right: 0
+}
+
+.formsection nf-field:nth-child(3) {
+    width: 12%;
+    margin-right: 1%
+}
+
+.formsection nf-field:nth-child(4) {
+    width: 35%;
+    margin-right: 4%
+}
+
+.formsection nf-field:nth-child(5) {
+    margin-right: 0
+}
+
+.formsection nf-field:nth-child(6) {
+    width: 22%;
+    margin-right: 4%
+}
+
+.formsection nf-field:nth-child(7) {
+    width: 22%;
+    margin-right: 4%
+}
+
+.formsection nf-field:nth-child(8) {
+    width: 22%;
+    margin-right: 4%
+}
+
+.formsection nf-field:nth-child(9) {
+    width: 22%;
+    margin-right: 0
+}
+
+.formsection nf-field:nth-child(10) {
+    width: 100%
+}
+
+body .nf-field-element input,
+body .nf-field-element select,
+body .nf-field-element textarea,
+body .formsection input,
+body .formsection select,
+body .formsection textarea {
+    border: 1px solid #e1e1e1;
+    text-indent: 0;
+    color: #404040;
+    padding: 0 1vw 0 2.5vw;
+    height: 2.4vw;
+    line-height: 2.4vw
+}
+
+body .nf-field-element textarea {
+    padding: .8vw 2vw .8vw 1vw;
+    height: 8vw;
+    line-height: 1.6vw
+}
+
+input#nf-field-11 {
+    text-indent: 0;
+    background: #fff;
+    color: #282828;
+    border: 1px solid #c29b5a;
+    border-radius: 0 0 24px;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    padding: .4vw 2.5vw;
+    cursor: pointer;
+    transition: .3s background, .3s color
+}
+
+input#nf-field-11:hover {
+    background: #c29b5a;
+    color: #fff
+}
+
+.nf-field-element:after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    font-size: 0;
+    left: .6vw;
+    top: .6vw;
+    height: 1.2vw;
+    width: 1.2vw
+}
+
+.submit-container .nf-field-element:after {
+    content: none
+}
+
+.firstname-container .nf-field-element:after {
+    background-image: url(//ijet.aero/airportconcierge/wp-content/themes/AirportConcierge/assets/css/../images/formicons/icon1.png)
+}
+
+.email-container .nf-field-element:after {
+    background-image: url(//ijet.aero/airportconcierge/wp-content/themes/AirportConcierge/assets/css/../images/formicons/icon2.png)
+}
+
+.phone-container .nf-field-element:after {
+    background-image: url(//ijet.aero/airportconcierge/wp-content/themes/AirportConcierge/assets/css/../images/formicons/icon3.png)
+}
+
+.date-container .nf-field-element:after {
+    background-image: url(//ijet.aero/airportconcierge/wp-content/themes/AirportConcierge/assets/css/../images/formicons/icon4.png)
+}
+
+#nf-field-16-container .nf-field-element:after {
+    background-image: url(//ijet.aero/airportconcierge/wp-content/themes/AirportConcierge/assets/css/../images/formicons/icon5.png)
+}
+
+.nf-field-label label {
+    font-weight: 400 !important
+}
+
+.label-above .nf-field-label {
+    margin-bottom: 5px
+}
+
+.slidebutton.hvr-bounce-to-right:before {
+    background: #c29b5a
+}
+
+.aboutbutton.hvr-bounce-to-right:before {
+    background: #525252
+}
+
+.servicebutton.hvr-rectangle-out:before {
+    background: #c29b5a
+}
+
+.pl_section2 {
+    position: relative;
+    margin: 0 0 4%
+}
+
+.pl_section2_gray {
+    background: #f7f7f7;
+    width: 52%;
+    height: 28vw;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 1vw
+}
+
+.pl_section2_bg {
+    width: 49%;
+    height: 28vw;
+    position: relative;
+    left: 3vw;
+    margin-top: 4vw
+}
+
+.pl_section2_desc {
+    vertical-align: top;
+    background: #c19a58;
+    color: #fff;
+    text-align: left;
+    width: 50%;
+    padding: 4vw 5vw 4vw 8vw
+}
+
+.pl_section3 {
+    margin: 0
+}
+
+.pl_section3_title {
+    color: #c29b5a;
+    font-weight: 600;
+    text-align: center;
+    padding: 3vw 0
+}
+
+.pl_section3_bg {
+    width: 100%;
+    height: 35vw
+}
+
+.pl_section4 {
+    margin: 6vw 0;
+    background: #f7f7f7
+}
+
+.pl_section4_title {
+    font-weight: 600;
+    text-align: center;
+    padding: 4vw 0 6vw
+}
+
+.pl_icons_container_s4 {
+    text-align: center
+}
+
+.icon_content_s4 {
+    text-align: center;
+    width: 24%;
+    margin: 0 4% 6vw
+}
+
+.icon_image_s4 {
+    width: 4vw;
+    height: 3vw;
+    position: relative;
+    margin-bottom: 2.5vw
+}
+
+.icon_image_s4:before,
+.icon_image_s4:after {
+    content: "";
+    height: 2px;
+    background: #c7c7c7;
+    position: absolute
+}
+
+.icon_image_s4:before {
+    width: 150%;
+    left: -25%;
+    bottom: -1vw
+}
+
+.icon_image_s4:after {
+    width: 100%;
+    left: 0;
+    bottom: -1.5vw
+}
+
+.icon_desc_s4 b {
+    text-transform: uppercase;
+    color: #c29b5a;
+    font-weight: 600
+}
+
+.pl_section5 {
+    background: #f7f7f7;
+    margin: 6vw 0;
+    padding: 4vw 0 5vw
+}
+
+.pl_section5_title {
+    position: relative;
+    color: #c29b5a;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 4vw
+}
+
+.pl_section5_title:before,
+.pl_section5_title:after {
+    content: "";
+    height: 2px;
+    background: 0 0;
+    position: absolute
+}
+
+.pl_section5_title:before {
+    width: 10%;
+    left: 45%;
+    top: 120%;
+    position: absolute
+}
+
+.pl_section5_title:after {
+    width: 6%;
+    left: 47%;
+    top: 4.55vw;
+    position: absolute;
+    top: 140%
+}
+
+.pl_section5_content {
+    background: #fff;
+    margin: 0 7% 5vw;
+    padding: 3% 3% 3% 1%;
+    border: 1px solid #c29b5a
+}
+
+.pl_section5_content:last-child {
+    margin-bottom: 0
+}
+
+.pl_section5_icon {
+    width: 5vw
+}
+
+.pl_section5_icon_content {
+    text-align: center;
+    width: 22%;
+    border-right: 1px solid #c29b5a;
+    padding: 2vw 0
+}
+
+.pl_section5_icon_content_right {
+    text-align: center;
+    width: 22%;
+    border-left: 1px solid #c29b5a;
+    padding: 2vw 0
+}
+
+.pl_section5_icon_title {
+    font-weight: 600;
+    text-align: center;
+    color: #c29b5a;
+    margin-top: 6%
+}
+
+.pl_section5_desc_right {
+    width: 69%;
+    margin-left: 8%
+}
+
+.pl_section5_desc_left {
+    width: 69%;
+    margin-left: 8%
+}
+
+.pl_section6 {
+    background-color: #f7f7f7;
+    margin: 4vw 0 0
+}
+
+.pl_section6_bg {
+    height: 32vw;
+    width: 49%
+}
+
+.pl_section6_right {
+    background: #eee;
+    width: 50%;
+    position: relative;
+    padding: 0 5%;
+    background: #f7f7f7
+}
+
+.pl_section6_desc1_we {
+    color: #c29b5a;
+    background: #f7f7f7;
+    position: absolute;
+    top: -2.4vw;
+    padding: 0 .5vw;
+    font-weight: 600;
+    left: 2.2vw
+}
+
+.pl_section6_desc1 {
+    border: 1px solid #c29b5a;
+    padding: 2vw 9%;
+    margin-bottom: 5%;
+    position: relative
+}
+
+.pl_section6_desc3 {
+    padding: 2vw 0;
+    position: relative
+}
+
+.pl_section6_desc4 {
+    border: 1px solid #c29b5a;
+    color: #c29b5a;
+    padding: 2vw 9%;
+    margin: 5% 0;
+    font-weight: 700;
+    position: relative
+}
+
+.pl_section6_desc1 p {
+    margin: 0
+}
+
+.pl_section6_desc2 {
+    background: #c29b5a;
+    color: #fff;
+    padding: 4% 16% 4% 30%;
+    position: relative;
+    left: -20%;
+    width: 141%
+}
+
+.pl_section6_desc8 {
+    background: #c29b5a;
+    color: #fff;
+    padding: 4% 15% 4% 16%;
+    position: relative;
+    left: -20%;
+    width: 141%
+}
+
+.home_section1 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 6vw;
+    background: #000
+}
+
+.home_overlay_1 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .89), rgba(0, 0, 0, .63), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    left: 0;
+    top: 0
+}
+
+.slider_section1_content {
+    color: #fff;
+    top: 0;
+    position: relative;
+    height: 50%;
+    margin: 0 6%
+}
+
+.slider_section1_title_content {
+    z-index: 50;
+    width: 50%;
+    position: relative
+}
+
+.slider_section1_title {
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.slider_section1_desc {
+    text-align: justify;
+    height: max-content;
+    margin-bottom: 2em
+}
+
+.slider_section1_button {
+    display: inline-block;
+    background: #c29b5a;
+    color: #fff;
+    border: 2px solid #c19a58;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .7em 3em
+}
+
+.slider_button {
+    display: inline-block;
+    border: 1px solid #c19a58;
+    padding: .7em 3em
+}
+
+.slider_section1_button.hvr-ripple-out:before {
+    border-color: #c29b5a
+}
+
+.airport_section1 {
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    overflow: hidden
+}
+
+.airport_nav_container {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    z-index: 40;
+    text-align: center;
+    color: #fff
+}
+
+.airport_nav {
+    border: 1px solid #c29b5a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    background-color: #c29b5a;
+    display: inline-block;
+    position: static;
+    width: .75vw;
+    height: .75vw;
+    margin: 0 .5vw
+}
+
+.airport_nav[state=active],
+.activenav {
+    transition: .5s;
+    background-color: transparent
+}
+
+.timer {
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+    background: #bc9657;
+    height: 2px;
+    width: 0
+}
+
+.fullwidth1 {
+    animation-name: example1;
+    animation-duration: 8s
+}
+
+@keyframes example1 {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+.fullwidth2 {
+    animation-name: example2;
+    animation-duration: 8s
+}
+
+@keyframes example2 {
+    0% {
+        width: 0
+    }
+
+    99% {
+        width: 100%
+    }
+
+    100% {
+        width: 0
+    }
+}
+
+.section1_content {
+    color: #fff;
+    top: 0;
+    position: relative;
+    height: 44vh
+}
+
+.airport_slide {
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    opacity: 0
+}
+
+.airport_slide[sid="1"] {
+    opacity: 1
+}
+
+.airport_overlay_1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    left: 0;
+    top: 0
+}
+
+.airport_section1_title_content {
+    z-index: 50;
+    width: 52%;
+    left: 5%;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block
+}
+
+.airport_section1_title {
+    font-weight: 600
+}
+
+.airport_section1_sub_title {
+    text-transform: none
+}
+
+.airport_section1_title_big {
+    letter-spacing: 0px
+}
+
+.airport_section2 {
+    position: relative;
+    padding: 3vw 4vw;
+    color: #fff
+}
+
+.airport_section2_content {
+    border: 1px solid #fff;
+    padding: 2vw 3vw;
+    z-index: 50;
+    position: relative;
+    text-align: center
+}
+
+.airport_section2_title1 {
+    margin: 0 7%
+}
+
+.airport_section2_title2 {
+    font-weight: 600
+}
+
+.airport_section2_title3 {
+    text-transform: uppercase
+}
+
+.airport_section2_title4 {
+    margin: 0 6%
+}
+
+.airport_title_margin {
+    margin-bottom: 18vw
+}
+
+.airport_title_margin2 {
+    margin-bottom: 10vw;
+    margin-top: 1vw
+}
+
+body.single-airport p {
+    margin: 0
+}
+
+.airport_section3_title1 {
+    text-transform: uppercase
+}
+
+.airport_section3_content {
+    text-align: center;
+    color: #494949
+}
+
+.airport_section3 {
+    padding: 6vw
+}
+
+.airport_section3_btn {
+    display: inline-block;
+    border: 1px solid #c29b5a;
+    background: #c29b5a;
+    color: #fff;
+    cursor: pointer;
+    padding: .8em 3.5em;
+    transition: .3s color, .3s background
+}
+
+.airport_section3_btn:hover {
+    background: #fff;
+    color: #c29b5a
+}
+
+.airport_section3_title2 {
+    margin: 2vw
+}
+
+.airport_section4_icon_content {
+    color: #c29b5a;
+    width: 24%;
+    box-sizing: content-box
+}
+
+.airport_section4_icon_title {
+    text-align: center;
+    margin-top: 2vw
+}
+
+.airport_section4 {
+    text-align: center;
+    padding: 14vw 0
+}
+
+.airport_section4_icon {
+    height: 4vw
+}
+
+.airport_section4_icon_content:nth-child(2) {
+    border: solid #c29b5a;
+    border-width: 0 1px;
+    margin: 0 1%;
+    padding: 0 3%
+}
+
+.airport_section5 {
+    padding: 5vw 9vw 2vw;
+    display: inline-block;
+    width: 100%;
+    clear: both
+}
+
+.airport_section5_title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #c29b5a;
+    margin-bottom: 5vw
+}
+
+.airport_section5_icon_content {
+    width: 24.5%;
+    text-align: center;
+    padding: 6% 3%;
+    float: left;
+    position: relative
+}
+
+.airport_section5_icon_content:before {
+    content: "";
+    background: #e7e7e7;
+    width: 1px;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%
+}
+
+.airport_section5_icon_content:after {
+    content: "";
+    background: #e7e7e7;
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    left: 19%;
+    bottom: 0
+}
+
+.airport_section5_icon_content:nth-last-child(-n+4):after,
+.airport_section5_icon_content:nth-child(4n+4):before {
+    background: 0 0
+}
+
+.airport_section5_icon_title {
+    color: #4d4d4d;
+    font-weight: 600;
+    margin-top: 1.5vw;
+    height: 3vw
+}
+
+.airport_section5_icon {
+    height: 3vw;
+    width: 60%
+}
+
+.airport_section6 {
+    color: #fff;
+    padding: 7vw 5vw
+}
+
+.airport_section6_title {
+    text-align: center;
+    text-transform: uppercase
+}
+
+.airport_section6_desc {
+    width: 45%;
+    margin: 5vw 0 0 50%
+}
+
+body.single-airport .airport_section6_desc p {
+    margin: 1em 0
+}
+
+.airport_section1_form_content {
+    width: 22%;
+    position: relative;
+    z-index: 50;
+    right: 6%;
+    top: 22%;
+    color: #fff;
+    float: right
+}
+
+.airport_section1_form_title {
+    margin-bottom: 1.2rem;
+    text-align: left
+}
+
+.airport_section1_form {
+    background: rgba(0, 0, 0, .5);
+    padding: 3vw 2vw 1.5vw;
+    position: relative
+}
+
+.bookinginfo_input {
+    margin-bottom: 1.1vw;
+    position: relative
+}
+
+input.wpcf7-form-control.wpcf7-text {
+    padding-left: 8%;
+    color: #000;
+    line-height: 1
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background: #c29b5a;
+    border: 1px solid #c29b5a;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding: .9em 0
+}
+
+span.wpcf7-not-valid-tip {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    left: 0
+}
+
+span.wpcf7-form-control-wrap {
+    position: relative;
+    background: #faebd7
+}
+
+.wpcf7-response-output.wpcf7-display-none {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding: 0 !important;
+    border-width: 0
+}
+
+div#wpcf7-f183-o1 {
+    position: relative;
+    padding-bottom: 0
+}
+
+.airport_section8 {
+    padding: 6vw;
+    text-align: center;
+    color: #333
+}
+
+.airport_section8_title {
+    text-transform: uppercase
+}
+
+.airport_section8_btn {
+    display: inline-block;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    padding: .8em 3.5em;
+    transition: .3s color, .3s background
+}
+
+.airport_section8_btn:hover {
+    background: #fff;
+    color: #000
+}
+
+.step_content {
+    width: 19%;
+    padding: 4% 5%
+}
+
+.step_number {
+    position: relative;
+    display: inline-block;
+    background: #c29b5a;
+    color: #fff;
+    font-weight: 600;
+    border: 6px solid #e2e2e2;
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    line-height: 3.5vw;
+    margin-bottom: 2vw
+}
+
+.step_number:before {
+    content: "";
+    width: 15vw;
+    height: 1px;
+    background: #c29b5a;
+    position: absolute;
+    top: calc(1.75vw - 3px);
+    left: 100%;
+    z-index: -1
+}
+
+.step_content:last-child .step_number:before {
+    display: none
+}
+
+.step_title {
+    font-weight: 600
+}
+
+.pl_section_airport_list {
+    text-align: center
+}
+
+.pl_section_airport_list_title {
+    color: #c29b5a;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 4vw
+}
+
+.pl_section_airport_list_title2 {
+    color: #c29b5a;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 2vw
+}
+
+.pl_section_airport_list_sub_title {
+    width: 50%;
+    margin: auto auto 2rem;
+    text-align: center;
+    font-size: 110%
+}
+
+.airport_link_image {
+    height: 10vw;
+    width: 100%;
+    margin-bottom: 3%;
+    overflow: hidden
+}
+
+.image_airport_zoom {
+    width: 100%;
+    height: 100%;
+    transition: .8s transform
+}
+
+.airport_link_content {
+    text-align: left;
+    width: 20%;
+    margin: 0 6% 3% 0
+}
+
+.airport_link_content:last-child,
+.airport_link_content:nth-child(4n+4) {
+    margin-right: 0
+}
+
+.airport_link_content:hover .image_airport_zoom {
+    transform: scale(1.1)
+}
+
+.airport_link_title {
+    color: #000;
+    text-transform: uppercase
+}
+
+.city_name {
+    font-weight: 600
+}
+
+.iata_code {
+    font-weight: 600
+}
+
+.service_title {
+    margin-bottom: 2%
+}
+
+.videoimg {
+    width: 1em;
+    height: 1em;
+    margin-right: .25em;
+    transition: .3s filter
+}
+
+.videotext {
+    margin-left: 4em
+}
+
+.videotext:hover .videoimg {
+    filter: brightness(0) invert(1)
+}
+
+.videolayer {
+    position: fixed;
+    display: flex;
+    padding: 5% 14%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .82);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1
+}
+
+.video_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+.video {
+    z-index: 50;
+    height: auto
+}
+
+.bg_to_right {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    border: 1px solid #c29b5a;
+    color: #c29b5a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .7em 3em;
+    transition: .3s color
+}
+
+.bg_to_right:hover {
+    color: #fff
+}
+
+.bg_to_right:before {
+    content: "";
+    position: absolute;
+    background-color: #c29b5a;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    transition: .4s cubic-bezier(.35, .04, 0, .61) width
+}
+
+.bg_to_right:hover:before {
+    width: 100%
+}
+
+.button_to_right:before {
+    content: "";
+    position: absolute;
+    background-color: #c29b5a;
+    z-index: 50;
+    height: 1px;
+    width: 0;
+    left: 0;
+    top: 98%;
+    transition: .4s cubic-bezier(.35, .04, 0, .61) width
+}
+
+.button_to_right:hover:before {
+    width: 100%
+}
+
+.defaulttitle {
+    font-weight: 600;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 2em;
+    padding-top: 3em
+}
+
+.defaultcontent {
+    margin-bottom: 3vw
+}
+
+.defaultcontent li {
+    margin-bottom: 1em
+}
+
+.videosection {
+    height: 48vw;
+    clear: both;
+    margin-bottom: 10vw
+}
+
+.vtitle {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    color: #c29b5a;
+    margin: 0 auto 4%
+}
+
+
+
+.container-fluid {
+    padding-left: 8%;
+    padding-right: 8%
+}
+
+h1 {
+    color: #c19a58;
+    font-weight: 700
+}
+
+h4 {
+    font-weight: 700;
+    text-align: center
+}
+
+.center-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.slid-elmnts {
+    width: 70%;
+    padding: 1rem;
+    vertical-align: middle
+}
+
+.slid-img {
+    padding-top: 20px;
+    padding-left: 30px
+}
+
+.book-btn {
+    border: solid #c19a58 1px;
+    padding: .5rem 2rem;
+    color: #c19a58;
+    background-color: transparent
+}
+
+.card-title {
+    font-weight: 700
+}
+
+.card-text {
+    font-weight: 700
+}
+
+.spacing-con {
+    height: 2.5rem
+}
+
+.airports-title {
+    text-align: center
+}
+
+.m-g-benfts {
+    text-align: center;
+    font-weight: 600;
+    color: #c19a58
+}
+
+.icons {
+    width: 20%;
+    min-height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5rem;
+    text-align: center
+}
+
+.sec-icons {
+    width: 15%;
+    min-height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5rem
+}
+
+.icons-text {
+    text-align: center;
+    min-height: 3.5rem;
+    margin: 0 5rem
+}
+
+.service-section {
+    padding: 0
+}
+
+.p-5 {
+    padding: 1.5rem !important
+}
+
+.p-4 {
+    padding: 1.2rem !important
+}
+
+.clearpadding {
+    padding: 0
+}
+
+.clearmargin {
+    margin: 0
+}
+
+.row {
+    margin: 0
+}
+
+.experiencerow {
+    margin: 0
+}
+
+.experienceleft {
+    z-index: 10
+}
+
+.experienceright {
+    background-color: #eee;
+    padding: 5rem 2rem 0 4rem;
+    margin: -2rem 0 2rem -2rem
+}
+
+.h4style {
+    color: #6e6e6e;
+    margin-bottom: 3rem
+}
+
+.cov_gold_desc {
+    font-weight: 900;
+    color: #c29b5a
+}
+
+.ai_section2 {
+    margin: 10rem 6% 2rem;
+    text-align: right
+}
+
+.ai_section_right {
+    text-align: left;
+    background: #eee;
+    width: 50%;
+    position: relative;
+    padding: 0 5%;
+    background: #f7f7f7;
+    right: -2rem;
+    top: 2rem
+}
+
+.ai_section_desc2 {
+    background: #c29b5a;
+    color: #fff;
+    padding: 4% 16% 4% 20%;
+    position: relative;
+    left: -20%;
+    width: 141%
+}
+
+.overlaybg {
+    background: #ebebeb;
+    position: relative;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+    right: 3rem;
+    top: -2rem
+}
+
+.airport_section1_icon_content {
+    color: #c29b5a;
+    width: 30%;
+    box-sizing: content-box;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize
+}
+
+.airport_section1_icon {
+    height: 3rem
+}
+
+.airport_icons.bg {
+    text-align: left;
+    margin-top: 6rem
+}
+
+.iconborder {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: rgba(194, 155, 90, .54);
+    margin: -3rem 0
+}
+
+body.single-coverage_airport .desktopmenu {
+    border-bottom: 1px solid rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, .9);
+    color: #fff
+}
+
+body.single-coverage_airport .pagecontainer {
+    margin: 0;
+    padding: 0
+}
+
+body.single-coverage_airport .airport_section6_desc p {
+    margin: 1em 0
+}
+
+.coverage_services_block {
+    margin: 3vw 0
+}
+
+.coverage_services_block:nth-child(3n+2) {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #e7e7e7
+}
+
+.h4style2 {
+    font-size: 30px;
+    color: #b97f7f;
+    font-weight: 500
+}
+
+h6 {
+    font-size: 1rem
+}
+
+a:hover {
+    text-decoration: none
+}
+
+@media only screen and (device-width:768px),
+only screen and (max-width:1024px),
+only screen and (max-device-width:1024px) and (orientation:portrait),
+only screen and (max-device-width:1024px) and (orientation:landscape) {
+    .coverage_services_block:nth-child(3n+2) {
+        border-color: rgba(231, 231, 231, 0)
+    }
+
+    .slidearrow {
+        display: none !important
+    }
+
+    .pl_section_airport_list_sub_title {
+        width: 80%
+    }
+
+    .icons-text {
+        margin: 1rem;
+        font-size: 1rem
+    }
+
+    .ai_section2 {
+        margin: 4rem 8% 0;
+        text-align: center
+    }
+
+    .ai_section2 .pl_section6_right {
+        padding: 0 7% 0;
+        right: 0;
+        top: 0
+    }
+
+    .ai_section2 .pl_section6_bg.pl_section6_height {
+        height: 24rem !important;
+        width: 100%;
+        background-position: 70% 0
+    }
+
+    .overlaybg {
+        background: #fff
+    }
+
+    .m-g-benfts {
+        font-size: 1.2rem !important;
+        margin: 0 !important
+    }
+
+    .h4style {
+        margin-bottom: 0;
+        font-size: 1.2rem
+    }
+
+    .experienceleft img.img-fluid.image {
+        width: 80%;
+        margin: auto;
+        display: block
+    }
+
+    .experienceleft {
+        padding: 0
+    }
+
+    .experienceright {
+        padding: 3rem 2rem;
+        margin: 0
+    }
+
+    .airport_icons.bg {
+        display: none
+    }
+}
+
+.airport_section1_title h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem
+}
+
+.cookie_bar {
+    position: fixed;
+    z-index: 150;
+    text-align: center;
+    bottom: 3%;
+    background-color: rgba(194, 155, 90, .6);
+    color: #fff;
+    width: 70%;
+    left: 15%;
+    padding: 1rem 0
+}
+
+.cookie_icon {
+    width: 2%;
+    margin-right: 1%
+}
+
+.cookie_bar a {
+    border-bottom: 1px solid #fff
+}
+
+.close_cookie {
+    width: 1%;
+    margin-left: 8%;
+    cursor: pointer
+}
+
+.hide_cookie {
+    bottom: -5rem;
+    transition: .8s bottom
+}
+
+.whatsappicon {
+    width: 1.1vw;
+    height: 1.1vw;
+    padding: .5vw;
+    box-sizing: content-box
+}
+
+#executive-protection-form .input-group p {
+    margin-bottom: 0;
+    width: 90%
+}
+
+#executive-protection-form .input-group p input {
+    padding-bottom: 1.5rem;
+    padding-top: 1rem
+}
+
+#executive-protection-form .flight-type select,
+#executive-protection-form .service select {
+    height: 2.6rem
+}
+
+@media(max-width:1440px) {
+    #executive-protection-form .input-group p {
+        width: 84%
+    }
+}
+
+@media(max-width:1024px) {
+    #executive-protection-form .input-group p {
+        width: 75%
+    }
+}
+
+@media(max-width:800px) {
+    #executive-protection-form .input-group p {
+        width: 84%
+    }
+}
+
+@media(max-width:500px) {
+    #executive-protection-form .input-group p {
+        width: 85%
+    }
+}
+
+@media(max-width:375px) {
+    #executive-protection-form .input-group p {
+        width: 82%
+    }
+}
+
