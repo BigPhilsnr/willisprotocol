@@ -30,10 +30,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-app.get('/.well-known/acme-challenge/:id', function(req, res, next) {
-    res.send(req.params.id+'.'+YOUR_PROVIDED_CERTBOT_ID);
+app.get('/.well-known/acme-challenge/BDot1Mtvc59o0-pzXlWR41iOutxHnsO4YpI0szpWOjg', (req, res) => {
+    res.send('BDot1Mtvc59o0-pzXlWR41iOutxHnsO4YpI0szpWOjg.6UHAUVC8-p-RiWRA8RQXVq3ZjA9JpjiGrXNhhk4FnPo');
 });
-
 app.get('/.well-known/acme-challenge/pLQskxXPBfvBDyAoTMiBEuIeF20vX2ApwazNZoRn5Vw', (req, res) => {
     res.send('pLQskxXPBfvBDyAoTMiBEuIeF20vX2ApwazNZoRn5Vw.nNwpn0DlnToaa9j6a0z-4IMv46hYFMpm6NHtk143Mbg');
 });
